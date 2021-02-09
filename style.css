@@ -1,0 +1,85 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body {
+
+
+  background: rgb(95,58,180);
+background: linear-gradient(337deg, rgba(95,58,180,1) 0%, rgba(63,28,121,1) 23%, rgba(40,29,130,1) 46%, rgba(26,39,156,1) 71%, rgba(29,48,253,1) 100%, rgba(0,2,22,1) 100%);
+  background-repeat: no-repeat;
+  font-family: 'Open Sans Hebrew', 'Assistant', sans-serif;
+  height:130vh;
+  color: #dedede;
+}
+.intro {
+  z-index: 999;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.repro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center
+}
+
+.main {
+ display: flex;
+ flex-direction: column;
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+text-shadow: 0px 0px 10px yellow;
+font-size: 110%;
+}
+
+
+
+svg {
+  width: 30px;
+  margin-left: 1rem;
+}
+.container {
+  position: absolute;
+  width: 600px;
+  height: 730px;
+  overflow: hidden;
+  perspective: 1000px;
+  transform: translateZ(-200px);
+  justify-self: center;
+  align-self: center;
+  margin: 10vw;
+}
+
+
+.container .slide {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .slide.slide1 {
+  background: url(imalebefore.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 605px 734px;
+}
+.container .slide.slide2 {
+  background: url(imaleafter.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 605px 734px;
+
+  left: 50%;
+}
