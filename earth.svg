@@ -1,0 +1,17 @@
+<svg width="1440" height="292" viewBox="0 0 1440 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="earth" filter="url(#filter0_i)">
+<circle cx="719.5" cy="1063.5" r="1063.5" fill="#479B14"/>
+</g>
+<defs>
+<filter id="filter0_i" x="-344" y="-164" width="2291" height="2291" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="645" dy="-372"/>
+<feGaussianBlur stdDeviation="82"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+</defs>
+</svg>

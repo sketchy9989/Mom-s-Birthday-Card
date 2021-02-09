@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="favicon.svg">
+    <link rel="preconnect" href="https: //fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>אמא שלי</title>
+  </head>
+  <body>
+<div class="header">
+  <div>
+       <a class=' absolute right-0 m-6 text-white underline hover:text-yellow-400 hover:text-2xl' href="index.html"></a>לדף הבא</a>
+  </div>
+	<svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+        clip-rule="evenodd"
+      />
+    </svg>
+
+<h1 class='p-3 font-bold text-xl md:text-3xl'>היום יום הולדת לאמא שלי</h1>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+        clip-rule="evenodd"
+      />
+    </svg>
+
+</div>
+
+    <div class="repro">
+      <h2 class='text-xs md:text-xl'>
+        בעמוד הזה: רפרודוקציה בפוטושופ, תיקון ושחזור ע"י שכבות של
+        צבע
+      </h2>
+      <h2  class='text-xs md:text-lg'>
+        בעמוד הבא:
+        <a class='underline hover:text-yellow-400 hover:text-2xl' href="cow.html"> פרה נחטפת לחלל החיצון </a>
+      </h2>
+    </div>
+
+	<div class="main">
+<div class='arrows flex justify-center space-x-3 my-3 pb-3'>
+
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+</svg>
+<h3>לפני</h3>
+<h3>אחרי</h3>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+</svg>
+
+	</div>
+<div class="container mt-3">
+      <div class="slide slide1"></div>
+      <div class="slide slide2" id="slide"></div>
+    </div>
+
+	</div>
+</div>
+    <script>
+      var slide = document.getElementById("slide");
+      window.onmousemove = function (e) {
+        var x = e.clientX;
+        slide.style.left = x + "px";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body {
+  background: rgb(42,107,255);
+background: radial-gradient(circle, rgba(42,107,255,1) 0%, rgba(13,6,102,1) 83%);
+overflow: hidden;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.ufo{
+  position: absolute;
+  top: 10%;
+  z-index: 99;
+}
+
+.earth {
+  width: 200vw;
+  height: 200vw;
+  background-color: green;
+  position: absolute;
+
+  border-radius: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.edna {
+  position: absolute;
+  top: 60%;
+  margin-top: -15vh;
+}
+
+.edna::after {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  content: '';
+  background-color: black;
+  border-radius: 50%;
+  perspective: 500px;
+  transform: rotateX(80deg) translateY(-400px);
+  opacity: .4;
+  filter: blur(10px)
+}
+
+.beam {
+  height: 400px;
+  width: 200px;
+  border-radius: 15%;
+  top: 200px;
+  background: rgb(255,253,42);
+background: linear-gradient(0deg, rgba(255,253,42,0) 0%, rgba(255,251,122,1) 100%);
+  position: absolute;
+  clip-path: polygon(45% 0.2%, 55% 0.2%, 55% 0%, 45% 0%);
+  opacity: .5
+}
+
+.beam::after{
+  content: '';
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  top: 550;
+  border-radius: 50%;
+}
+.spot  {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  top: 520px;
+  border-radius: 50%;
+  border-bottom: 15px solid yellow;
+  opacity: .5;
+  box-shadow: inset 0px 0px 20px 20px rgba(255, 255, 0, 0.185),
+  inset 0px 0px 20px 20px rgba(255, 255, 0, 0.295),
+
+  inset 0px 0px 20px 20px rgba(255, 255, 0, 0.315);
+  z-index: 99;
+}

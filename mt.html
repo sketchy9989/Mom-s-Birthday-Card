@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https: //fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>יומולדת יומולדת</title>
+  </head>
+  <body>
+    <!-- <canvas id="canvas1"></canvas> -->
+    <div class="container">
+      <div class="mazal-tov">
+        <div class="mazal">
+          <svg
+            width="333"
+            height="335"
+            viewBox="0 0 333 335"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- מ"ם -->
+            <path
+              class="mem"
+              d="M270.501 124.194C270.501 124.194 279.296 119.543 271.501 109.694C245.089 76.3218 238.459 188.549 294.001 200.693C338.281 210.374 337.458 129.774 325.001 86.1926C299.023 -4.69084 150.109 -109.725 194.084 277.004C194.832 283.578 202.935 285.432 205.041 279.16C227.201 213.17 145.001 164.693 145.001 164.693C145.001 164.693 208.957 324.93 151.501 320C135.952 318.666 125 305 127.501 297.193C129.944 289.566 136.06 287.84 142 290C158.5 296 142 334 142 334"
+              stroke="white"
+              stroke-linecap="round"
+              }
+            />
+
+            <!-- זי"ן למ"ד -->
+
+            <path
+              class="zal"
+              d="M43.6103 126.719C43.6103 126.719 77.982 150.304 101.361 145.983C149.442 137.098 114.589 29.5131 65.8254 25.927C19.5248 22.5221 -4.4799 81.5148 3.61353 127.229C9.00161 157.663 57.2312 297.881 46.1379 324.703C37.4058 345.816 25.6487 325.718 25.4412 309.465C25.1284 284.967 51.5733 290.039 60 285.501C68.4267 280.962 55.8589 274.208 54 280C52.1411 285.793 62.7051 309.108 76.2871 309.465C110.369 310.362 135.485 237.523 101.361 223C83.2998 215.314 54.8711 231.5 69 231.5C77.5 231.5 103.5 214.5 94.5 189"
+              stroke="white"
+              stroke-linecap="round"
+            />
+            <defs>
+              <filter id="f1" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="8255" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="tov">
+          <svg
+            width="394"
+            height="375"
+            viewBox="0 0 394 375"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- טי"ת - וי"ו -->
+            <path
+              class="to"
+              d="M293.105 278.019C322.105 285.776 313.366 351.66 273.938 336.327C184.141 301.404 340.781 -77.1566 380.104 39.6192C419.427 156.395 221.745 344.254 212.605 238.716C211.542 226.446 216.274 222.397 220.105 234.062C229.105 261.47 208.605 344.729 208.605 344.729"
+              stroke="white"
+              stroke-linecap="round"
+            />
+
+            <!-- צ'ופצ'יק -->
+            <path
+              class="holam"
+              d="M217.251 192.981C217.251 192.981 221.304 197.882 222.091 201.735C222.4 203.246 221.789 205.381 219.018 204.539C219.018 204.539 214.943 202.796 215.636 199.603C216.683 194.778 225.612 196.724 225.612 196.724"
+              stroke="white"
+              stroke-linecap="round"
+            />
+            <!-- בי"ת -->
+
+            <path
+              class="bet"
+              d="M48.1976 324.542C48.1976 324.542 41.4884 327.823 47.4347 334.77C67.5825 358.308 72.6402 279.149 30.2709 270.584C-3.50792 263.755 -2.87994 320.606 6.62286 351.346C26.7774 416.542 133.834 325.578 129.639 290.949C128.941 285.192 129.181 288.838 129.639 294.615C133.355 341.521 148.229 369.744 195.209 291.677C218.086 253.663 169.709 184.822 111.049 232.901C65.073 270.584 79.2701 215.006 79.2701 215.006"
+              stroke="white"
+              stroke-linecap="round"
+            />
+
+            <!-- Polygon Mask -->
+            <path
+              d="M245.59 271.338C246.5 269.723 246.115 266.973 245.846 266.103L230 270.902C230.357 272.532 233.531 272.636 243.035 271.774L245.59 271.338Z"
+              fill="black"
+            />
+
+            <!-- Gradient Mask -->
+
+            <path
+              d="M318.498 163.193L357.499 158.538L340.499 225.766L252.894 281.41C241 272.826 251.364 252.382 252.894 243.349L318.498 163.193Z"
+              fill="url(#paint0_linear)"
+            />
+
+            <defs>
+              <linearGradient
+                id="paint0_linear"
+                x1="329.049"
+                y1="192.179"
+                x2="274.494"
+                y2="292.901"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0.0572917" stop-color="black" stop-opacity="0" />
+                <stop offset="0.192708" stop-color="black" />
+              </linearGradient>
+              <filter id="f1" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+       
+</div>
+</div>
+        <div class="box h-1/3 w-1/4 absolute "></div>
+        <div class="boxside absolute"></div>
+        <div class="boxside2 absolute"></div>
+      </div>
+    </div>
+    <script>
+      var tl = gsap.timeline({ repeat: 1, delay: 2 });
+      tl.to(".mem", {
+        // opacity: 1,
+        duration: 0.5,
+        strokeDashoffset: 0,
+      });
+      tl.to(".zal", {
+        // opacity: 1,
+        duration: 0.5,
+        strokeDashoffset: 0,
+      });
+
+      tl.to(".to", {
+        // opacity: 0,
+        duration: 0.5,
+        strokeDashoffset: 0,
+      });
+      tl.to(".bet", {
+        // opacity: 0,
+        duration: 0.5,
+        strokeDashoffset: 0,
+      });
+      tl.to(".holam", {
+        // opacity: 0,
+        duration: 0.5,
+        strokeDashoffset: 0,
+      });
+
+      tl.to(".mem", {
+        duration: 1,
+        boxShadow: "0px 0px 30px 30px rgba(225, 225, 225, 1)",
+      });
+
+      tl.to(".mausi", { duration: 1, opacity: 0 });
+    </script>
+  </body>
+</html>
